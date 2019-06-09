@@ -1,2 +1,10 @@
 -> ⸨░░░░░░░░░░░░░░░░░░⸩ ⠇ rollbackFailedOptional: verb npm-session 890ac95344dabcd8
-  - npm config set registry http://registry.npmjs.org/
+  	# this is related to npm registry, remove the proxy first
+   	 > npm config rm proxy
+    	> npm config rm https-proxy
+
+   	 # then set the npm to default proxy
+    	> npm config set registry http://registry.npmjs.org/
+  
+-> Module build failed: Error: Couldn't find preset "es2015" relative to directory
+		> npm install babel-cli babel-preset-es2015
